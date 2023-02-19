@@ -1,0 +1,14 @@
+:root{
+    --black: #101010;
+    --orange: #FDAF01;
+    --white: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    background-color: var(--black);
+}
+
