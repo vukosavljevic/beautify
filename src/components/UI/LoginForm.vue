@@ -8,7 +8,7 @@
         <label for="password">Password</label>
         <input type="text" id="password" v-model="password">
         </div>
-
+    </form>    
         <div class="form--next">
             <div class="checkbox--tick">
                 <input type="checkbox">
@@ -16,7 +16,7 @@
             </div>
             <button @click="proceedNext">Login</button>
         </div>
-    </form>
+
 <basic-info v-if="validStatus" :key="name" :name="name"></basic-info>
 </template>
 

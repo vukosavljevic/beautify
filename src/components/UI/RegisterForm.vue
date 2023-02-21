@@ -15,7 +15,7 @@
                 <input type="checkbox">
                 <label for="remember">Remember me</label>
             </div>
-           <button> <router-link to="/login">Let's start</router-link></button>
+           <button >  <router-link to="/login" class="button--bg">Let's start</router-link></button>
         </div>
 
 </template>
@@ -38,6 +38,12 @@ export default {
 }
 </script>
 <style>
+
+:root{
+    --black: #101010;
+    --orange: #FDAF01;
+    --white: #FFFFFF;
+}
 *{
    padding: 0;
    margin: 0;
@@ -51,11 +57,11 @@ export default {
     display: flex;
     flex-direction: column;
     margin: 0px 35px;
-}
 
-.form--next{
     padding: 50px 0;
 }
+
+
 
 .form--next > div{
     display: flex;
@@ -65,6 +71,10 @@ export default {
     margin: 5px 20px;
 
     gap: 5px;
+}
+
+.button--bg{
+    background-color: var(--orange);
 }
 
 </style>
