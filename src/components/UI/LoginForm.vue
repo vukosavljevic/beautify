@@ -67,6 +67,9 @@ export default {
     color: var(--white);
 }
 
+.form--next{
+    margin: 5px 20px;
+}
 
 html, body{
     min-height: 100%;
@@ -103,7 +106,7 @@ button{
    border-radius: 5px;
 
    padding: 10px;
-   margin: 5px 20px;
+
 
    color: var(--white);
    

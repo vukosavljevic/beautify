@@ -23,6 +23,7 @@
    box-sizing: border-box;
 }
 
+
 h1{
    color: var(--white);
 
