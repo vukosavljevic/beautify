@@ -1,14 +1,15 @@
 <template>
    <div>
-        <h1>beutify</h1>
+        <h1>beautify</h1>
    </div>
    <div class="beaufiy--login">
-    <router-link to="/login">Login</router-link>
+    <router-link to="/login">Log in</router-link>
     <router-link to="/register">Sign up</router-link>
    </div>
 </template>
 
 <style scoped>
+
 
 /* 375px x 667px: rezolucija ekrana */
 :root{
@@ -23,6 +24,7 @@
    box-sizing: border-box;
 }
 
+
 h1{
    color: var(--white);
 
@@ -34,6 +36,8 @@ h1{
 .beaufiy--login{
    display: flex;
    flex-direction: column;
+
+   margin: 10px;
 }
 
 a{

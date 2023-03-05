@@ -1,22 +1,21 @@
 <template>
-    <h1>beaufity</h1>
+    <h1>beautify</h1>
     <form @submit.prevent="logIn()" v-if="!validStatus">
 
-        <div class="input--info">
-        <label for="name">E-mail</label>
-        <input type="text" id="name" v-model="name">
-        <label for="password">Password</label>
-        <input type="text" id="password" v-model="password">
+        <div class="beautify--login">
+            <label for="name">Name</label>
+            <input type="text" id="name" v-model="name">
+            <label for="password">Password</label>
+            <input type="text" id="password" v-model="password">
         </div>
-    </form>    
         <div class="form--next">
-            <div class="checkbox--tick">
+            <div class="beautify--checkbox">
                 <input type="checkbox">
                 <label for="remember">Remember me</label>
             </div>
-            <button @click="proceedNext">Login</button>
+            <button @click="proceedNext">Log in</button>
         </div>
-
+    </form>
 <basic-info v-if="validStatus" :key="name" :name="name"></basic-info>
 </template>
 
@@ -50,8 +49,7 @@ export default {
     }
 }
 </script>
-<style>
-/* added vue material icons */
+<style scoped>
 
 :root{
     --black: #101010;
@@ -67,6 +65,12 @@ export default {
     color: var(--white);
 }
 
+.beautify--login{
+    display: flex;
+    flex-direction: column;
+
+    margin: 100px 30px;
+}
 
 html, body{
     min-height: 100%;
@@ -94,7 +98,9 @@ input{
     border: 1px var(--white) solid;
 
     padding: 10px;
-    margin: 5px 0;
+    margin: 5px 0px;
+
+    font-weight: 100;
 }
 
 button{
@@ -103,7 +109,6 @@ button{
    border-radius: 5px;
 
    padding: 10px;
-   margin: 5px 20px;
 
    color: var(--white);
    
@@ -111,6 +116,9 @@ button{
 
 }
 
+.form--next{
+    margin: 5px 20px;
+}
 input[type="checkbox"]{
     appearance: none;
     background-color: transparent;
@@ -147,15 +155,6 @@ input[type="checkbox"]:focus{
     gap: 10px;
 }
 
-.input--info{
-    display: flex;
-    flex-direction: column;
-
-    padding: 30vw 0;
-
-    margin: 5px 35px;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -166,6 +165,17 @@ form {
     display: flex;
     flex-direction: column;
 
+}
+
+.beautify--checkbox{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 25px 0;
 }
 
 </style>
