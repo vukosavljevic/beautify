@@ -3,8 +3,10 @@
         <h3>Welcome,{{ name }}!</h3>
     </div>
     <div class="gender">
-        <p>Date of birth</p>
-        <input type="date" required>
+        <div class="date">
+            <p>Date of birth</p>
+            <input type="date" required>
+        </div>
         <div class="checkbox--new">
             <p>Gender</p>
         </div>
@@ -37,24 +39,28 @@ export default {
 
 <style scoped>
 h3 {
-    text-align: center
-    ;
-    margin:2rem 0 0 0;
+    text-align: center;
+    margin: 2rem 0 0 0;
 }
 
 .heading {
     margin-left: 1rem;
 }
-
+.date input{
+    text-align: center;
+width: 100%;
+}
 .gender {
     display: flex;
     flex-direction: column;
     padding: 2rem 5rem 5rem 5rem;
 }
-.gender a{
+
+.gender a {
     margin-top: 8rem;
 }
-.checkbox--new{
+
+.checkbox--new {
     display: flex;
     margin-top: 1rem;
     align-content: center;
@@ -62,7 +68,8 @@ h3 {
     justify-content: flex-end;
     align-items: center;
 }
-.checkbox--new input{
+
+.checkbox--new input {
     margin-right: 1rem;
 }
 </style>

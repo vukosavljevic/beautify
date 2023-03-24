@@ -1,5 +1,5 @@
 <template>
-    <h1>beaufity</h1>
+    <h1>beautify</h1>
     <form @submit.prevent="LogIn()" v-if="!validStatus">
 
         <div class="input--info">

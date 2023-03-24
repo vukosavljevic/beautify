@@ -1,7 +1,7 @@
 <template>
     <div class="item--page">
         <h2>We have found perfect solution(s) for you!</h2>
-        <a href="https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser">
+        <a href="https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser" target="blank">
             <div class="product--item">
                 <img src="../../assets/first.png" alt="">
                 <div class="product--description">
@@ -11,7 +11,7 @@
                 </div>
             </div>
         </a>
-        <a href="https://www.cetaphil.com/us/cleansers/gentle-skin-cleanser/302990110227.html">
+        <a href="https://www.cetaphil.com/us/cleansers/gentle-skin-cleanser/302990110227.html" target="blank">
             <div class="product--item">
                 <img src="../../assets/2532669.png" alt="">
                 <div class="product--description">
@@ -21,10 +21,7 @@
                 </div>
             </div>
         </a>
-        <a href="">
-
-        </a>
-        <a href="https://hr.iherb.com/pr/alaffia-everyday-coconut-face-toner-purely-coconut-12-fl-oz-354-ml/50622">
+        <a href="https://hr.iherb.com/pr/alaffia-everyday-coconut-face-toner-purely-coconut-12-fl-oz-354-ml/50622" target="blank">
             <div class="product--item">
                 <img src="../../assets/third-removebg-preview.png" alt="">
                 <div class="product--description">
@@ -34,7 +31,7 @@
                 </div>
             </div>
         </a>
-        <a href="https://www.cocokind.com/products/rosewater-toner">
+        <a href="https://www.cocokind.com/products/rosewater-toner" target="blank">
             <div class="product--item">
                 <img src="../../assets/forth-removebg-preview.png" alt="">
                 <div class="product--description">

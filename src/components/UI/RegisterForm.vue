@@ -1,5 +1,5 @@
 <template>
-    <h1>beaufity</h1>
+    <h1>beautify</h1>
     <form class="form--register" @submit="logIn()">
         <label for="name">Name</label>
         <input type="text" id="name" v-model="nameUser" required>
