@@ -25,7 +25,7 @@
             <input type="checkbox">
         </div>
 
-        <router-link to="/skintype">Save and continue</router-link>
+        <router-link to="/skintype" class="button--bg">Save and continue</router-link>
     </div>
 </template>
 

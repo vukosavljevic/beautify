@@ -51,7 +51,9 @@
 .item--page {
     margin-bottom: 2rem;
 }
-
+.item--page h2{
+    padding:1rem;
+}
 .product--description p {
     font-size: 10px;
     text-align: left;
@@ -81,5 +83,7 @@ img {
     margin-bottom: 3rem;
 }
 
-.product--description {}
+.product--item:nth-child(last){
+    margin-bottom: 2rem;
+}
 </style>

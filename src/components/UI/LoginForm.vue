@@ -6,7 +6,7 @@
         <label for="name">Name</label>
         <input type="text" id="name" v-model="name">
         <label for="password">Password</label>
-        <input type="text" id="password" v-model="password">
+        <input type="password" id="password" v-model="password">
         </div>
         <button @click="proceedNext">Login</button>
         <div class="form--next">

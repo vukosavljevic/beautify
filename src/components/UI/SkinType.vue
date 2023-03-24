@@ -29,7 +29,7 @@
             <input type="checkbox">
         </div>
     </div>
-    <router-link to="/products">Find me a solution</router-link>
+    <router-link to="/products" class="button--bg">Find me a solution</router-link>
 </template>
 
 <style scoped>

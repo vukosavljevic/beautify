@@ -1,6 +1,6 @@
 <template>
     <h1>beaufity</h1>
-    <form class="form--register" @submit.prevent="logIn()">
+    <form class="form--register" @submit="logIn()">
         <label for="name">Name</label>
         <input type="text" id="name" v-model="nameUser" required>
         <label for="password">Lastname</label>
@@ -9,14 +9,15 @@
         <input type="text" id="Email" v-model="email" required>
         <label for="Password">Password</label>
         <input type="password" id="Password" v-model="passwordUser" required>
-        <div class="form--next">
-            <div class="checkbox--wrapper">
+        <div class="checkbox--wrapper">
             <div>
                 <input type="checkbox" value="yes">
-                <label for="remember" class="remember">I accept terms and conditions of beautify and I accept to receive newsletter</label>
+                <label for="remember" class="remember">I accept terms and conditions of beautify and I accept to receive
+                    newsletter</label>
             </div>
+            <div class="text-align">
+                <router-link to="/login" class="button--bg" @click="logIn()">Let's start</router-link>
             </div>
-           <button><router-link to="/login" class="button--bg">Let's start</router-link></button>
         </div>
 
     </form>
@@ -40,22 +41,25 @@ export default {
 }
 </script>
 <style>
-
-:root{
+:root {
     --black: #101010;
     --orange: #FDAF01;
     --white: #FFFFFF;
 }
-*{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
     color: var(--white);
 }
+.text-align{
+    text-align: center;
+    margin-top: 2rem;
+}
+.form--register {
 
-.form--register{
-    
     display: flex;
     flex-direction: column;
     margin: 0px 35px;
@@ -65,7 +69,7 @@ export default {
 
 
 
-.form--next > div{
+.form--next>div {
     display: flex;
 
     padding: 10px;
@@ -74,15 +78,21 @@ export default {
     gap: 5px;
 }
 
-.button--bg{
+.button--bg {
     background-color: var(--orange);
+    text-align: center;
+    padding: 1rem 3rem;
+    border-radius: 10px;
 }
-.checkbox--wrapper{
+
+.checkbox--wrapper {
     display: flex;
     flex-direction: column;
-    
+    margin-top: 1rem;
+
 }
-.remember{
+
+.remember {
     margin-left: 1rem;
 }
 </style>
