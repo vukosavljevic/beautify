@@ -1,22 +1,21 @@
 <template>
     <h1>beaufity</h1>
-    <form @submit.prevent="logIn()" v-if="!validStatus">
+    <form @submit.prevent="LogIn()" v-if="!validStatus">
 
         <div class="input--info">
-        <label for="name">E-mail</label>
+        <label for="name">Name</label>
         <input type="text" id="name" v-model="name">
         <label for="password">Password</label>
         <input type="text" id="password" v-model="password">
         </div>
-    </form>    
+        <button @click="proceedNext">Login</button>
         <div class="form--next">
             <div class="checkbox--tick">
                 <input type="checkbox">
                 <label for="remember">Remember me</label>
             </div>
-            <button @click="proceedNext">Login</button>
         </div>
-
+    </form>    
 <basic-info v-if="validStatus" :key="name" :name="name"></basic-info>
 </template>
 
@@ -41,6 +40,7 @@ export default {
             if (this.loggedStatus != '') {
                 if (this.loggedStatus === this.password) {
                     this.validStatus = true
+                    console.log('sdasdasd')
                 }
             }
         }

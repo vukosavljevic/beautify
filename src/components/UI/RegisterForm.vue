@@ -8,16 +8,18 @@
         <label for="Email">Email</label>
         <input type="text" id="Email" v-model="email" required>
         <label for="Password">Password</label>
-        <input type="text" id="Password" v-model="passwordUser" required>
-    </form>
+        <input type="password" id="Password" v-model="passwordUser" required>
         <div class="form--next">
+            <div class="checkbox--wrapper">
             <div>
-                <input type="checkbox">
-                <label for="remember">Remember me</label>
+                <input type="checkbox" value="yes">
+                <label for="remember" class="remember">I accept terms and conditions of beautify and I accept to receive newsletter</label>
             </div>
-           <button >  <router-link to="/login" class="button--bg">Let's start</router-link></button>
+            </div>
+           <button><router-link to="/login" class="button--bg">Let's start</router-link></button>
         </div>
 
+    </form>
 </template>
 <script>
 export default {
@@ -65,7 +67,6 @@ export default {
 
 .form--next > div{
     display: flex;
-    align-items: center;
 
     padding: 10px;
     margin: 5px 20px;
@@ -76,5 +77,12 @@ export default {
 .button--bg{
     background-color: var(--orange);
 }
-
+.checkbox--wrapper{
+    display: flex;
+    flex-direction: column;
+    
+}
+.remember{
+    margin-left: 1rem;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
    <div>
-        <h1>beutify</h1>
+        <h1>beautify</h1>
    </div>
    <div class="beaufiy--login">
     <router-link to="/login">Login</router-link>
